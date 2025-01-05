@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTT Platform Authentication</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <h1>OTT Platform Authentication</h1>
@@ -12,6 +13,7 @@
         <form id="registerForm">
             <input type="text" id="registerUsername" placeholder="Username" required>
             <input type="password" id="registerPassword" placeholder="Password" required>
+            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
             <button type="submit">Register</button>
         </form>
     </div>
@@ -20,6 +22,7 @@
         <form id="loginForm">
             <input type="text" id="loginUsername" placeholder="Username" required>
             <input type="password" id="loginPassword" placeholder="Password" required>
+            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
             <button type="submit">Login</button>
         </form>
     </div>
