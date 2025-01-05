@@ -2,11 +2,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
+const path = require('path');
 
 const app = express();
 const port = 3000;
 
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'public')));
 
 const users = []; // This should be replaced with a database in a real application
 
